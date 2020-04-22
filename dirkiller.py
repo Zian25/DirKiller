@@ -14,6 +14,8 @@ parser.add_argument("--ssl", help="Em casos de uso de HTTPS não identificado", 
 parser.add_argument("-o", help="Insira o Sistema Operacional do host (Unix/Linux/Windows)", required=False, dest="os", action="store")
 parser.add_argument("-v", help="Modo Verbose", required=False, dest="verbose", action="store_true")
 parser.add_argument("-v2", help="Modo Verbose ++", required=False, dest="verbose2", action="store_true")
+# parser.add_argument("-sp", help="Busca diretorios sensiveis", required=False, dest="sensiveis", action="store_true")
+
 
 args = parser.parse_args()
 vuln = 0
@@ -167,7 +169,3 @@ if args.host:
 	if vuln >0:
 		for item in vuln_link:
 			print (item+" <-- Vulnerável")
-
-
-
-

