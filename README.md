@@ -10,5 +10,5 @@ python3 dirkiller.py -h
 # Info
 Atualizado constantemente com funções novas, wordlists mais eficientes e mais...
 
-# Isenção
+# Isenção de responsábilidade
 Não sou responsável por qualquer ato feito com a ferramenta, visto que foi feita para fins de conhecimento.
