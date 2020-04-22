@@ -35,10 +35,12 @@ if args.host:
 
 	elif args.host.startswith("www."):
 		host = args.host.replace("www.", "")
+		init = "www."
 
 
 	else:
 		host = args.host
+		init = "www."
 
 	if host.endswith("/"):
 		host = host.replace("/", "")
@@ -128,6 +130,11 @@ if args.host:
 			else:
 				pass
 			exit(0)
+
+		except requests.exceptions.InvalidSchema:
+			print("Não foi possivel conectar! Verifique a porta e parametros")
+			break
+			
 		except requests.exceptions.ConnectionError:
 			print(f"Não foi possivel conectar com {host} na porta {porta}\n")
 			if porta == 443:
