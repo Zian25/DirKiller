@@ -15,3 +15,8 @@ Atualizado constantemente com funções novas, wordlists mais eficientes e mais.
 
 # Isenção de responsabilidade
 Não sou responsável por qualquer ato feito com a ferramenta, visto que foi feita para fins de conhecimento.
+
+# URL's/Consultas/Referencias
+<li>https://www.soffensive.com/2018/06/exploiting-blind-file-reads-path.html</li>
+<li>https://github.com/soffensive/windowsblindread</li>
+<li>https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal</li>
