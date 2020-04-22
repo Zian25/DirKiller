@@ -2,7 +2,8 @@
 import sys
 import requests
 import argparse
-import os
+import os as terminal
+import re
 sys.path.append("modulos")
 
 parser = argparse.ArgumentParser(description='dirkiller.py -h para ver a tela de ajuda')
@@ -21,6 +22,12 @@ ssl = False
 wordl = False
 tentativa = 0
 os = "undef"
+checker = terminal.popen("git pull").read()
+if re.search("Already up to date.", checker):
+	print ("[+] Não há atualizações, o sistema pode prosseguir.")
+else:
+	print ("[+] DirKiller foi atualizado!")
+			
 if args.host:
 	# Aqui inicia os checks	
 	if args.host.startswith("http://"):
@@ -134,7 +141,7 @@ if args.host:
 		except requests.exceptions.InvalidSchema:
 			print("Não foi possivel conectar! Verifique a porta e parametros")
 			break
-			
+
 		except requests.exceptions.ConnectionError:
 			print(f"Não foi possivel conectar com {host} na porta {porta}\n")
 			if porta == 443:
