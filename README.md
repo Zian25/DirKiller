@@ -5,6 +5,7 @@ Um scanner web para detectar vulnerabilidade Directory Traversal, feito para fin
 Compatível com Termux, Windows, Linux em geral. (Qualquer O.S que suporte git e Python3) 
 # Como usar?
 ```
+apt-get install git
 git clone https://github.com/Zian25/DirKiller
 cd DirKiller
 python3 dirkiller.py -h
