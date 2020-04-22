@@ -1,5 +1,7 @@
 # DirKiller
 Um scanner web para detectar vulnerabilidade Directory Traversal, feito para fins de conhecimento e tempo livre.
+
+
 Compatível com Termux, Windows, Linux em geral. (Qualquer O.S que suporte git e Python3) 
 # Como usar?
 ```
