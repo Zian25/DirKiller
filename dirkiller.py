@@ -26,7 +26,7 @@ checker = terminal.popen("git pull").read()
 if re.search("Already up to date.", checker):
 	print ("[+] Não há atualizações, o sistema pode prosseguir.")
 else:
-	print ("[+] DirKiller foi atualizado!")
+	print ("[+] DirKiller foi atualizado, inicie novamente para aplicar a atualização")
 			
 if args.host:
 	# Aqui inicia os checks	
@@ -45,9 +45,14 @@ if args.host:
 		init = "www."
 
 
+	elif args.host.isdigit():
+		host = args.host
+		init = "http://"
+
+
 	else:
 		host = args.host
-		init = "https://"
+		init = input("Digite o protocolo (Ex: http://, https://): ")
 
 	if host.endswith("/"):
 		host = host.replace("/", "")
@@ -116,7 +121,7 @@ if args.host:
 					print(f"[-] {r.url}")
 
 				elif args.verbose2:
-					print (f"[-] Status:{r.status_code} URL: {r.url}")
+					print (f"[-]  Status:{r.status_code} URL: {r.url}")
 
 			elif int(r.status_code) == 403:
 				print (f"[-] WAF: {r.url} ")
