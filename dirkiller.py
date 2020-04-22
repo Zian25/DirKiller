@@ -82,7 +82,7 @@ if args.host:
 			os = "undef"
 			print ("[i] Usando Path's de todos os sistemas\n")
 
-
+	print ("[i] Pressione CTRL+C para encerrar\n")
 	
 	if args.word:
 		wordl = True
