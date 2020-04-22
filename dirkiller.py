@@ -47,7 +47,7 @@ if args.host:
 
 	else:
 		host = args.host
-		init = "www."
+		init = "https://"
 
 	if host.endswith("/"):
 		host = host.replace("/", "")
@@ -116,14 +116,19 @@ if args.host:
 					print(f"[-] {r.url}")
 
 				elif args.verbose2:
-					print (f"[-]Status:{r.status_code} URL: {r.url}")
+					print (f"[-] Status:{r.status_code} URL: {r.url}")
 
 			elif int(r.status_code) == 403:
 				print (f"[-] WAF: {r.url} ")
 
 			elif int(r.status_code) >= 200 and int(r.status_code) <300:
 				vuln_link.append(r.url)
-				print (f"[+] {r.url} <-- Vulnerável")
+				if args.verbose2:
+					print (f"[+] Status:{r.status_code}: {r.url} <-- Vulnerável")
+
+				else:
+					print (f"[+] {r.url} <-- Vulnerável")
+
 				vuln = vuln + 1
 
 
