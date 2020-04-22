@@ -20,3 +20,6 @@ Não sou responsável por qualquer ato feito com a ferramenta, visto que foi fei
 <li>https://www.soffensive.com/2018/06/exploiting-blind-file-reads-path.html</li>
 <li>https://github.com/soffensive/windowsblindread</li>
 <li>https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal</li>
+<li>https://gracefulsecurity.com/path-traversal-cheat-sheet-windows/</li>
+<li>https://owasp.org/www-community/attacks/Path_Traversal</li>
+<li>https://www.vulnerability-lab.com/resources/documents/587.txt</li>
