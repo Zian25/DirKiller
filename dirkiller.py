@@ -28,7 +28,7 @@ checker = terminal.popen("git pull").read()
 if re.search("Already up to date.", checker):
 	print ("[+] Não há atualizações, o sistema pode prosseguir.")
 else:
-	print ("[+] DirKiller foi atualizado, inicie novamente para aplicar a atualização")
+	print ("[!] DirKiller foi atualizado, inicie novamente para aplicar a atualização")
 			
 if args.host:
 	# Aqui inicia os checks	
